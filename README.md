@@ -1,4 +1,4 @@
-## Fast LiDAR-Inertial Odometry via Incremental Plane Pre-Fitting and Tracking
+## Fast LiDAR-Inertial Odometry via Incremental Plane Pre-Fitting and Skeleton Tracking
 
 Paper is under review 🧐...
 
