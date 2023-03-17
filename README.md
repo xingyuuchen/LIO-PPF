@@ -2,5 +2,5 @@
 
 Paper is under review 🧐...
 
-Code will be published shortly if accepted.
+Code will be published soon.
 
