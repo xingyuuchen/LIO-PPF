@@ -187,7 +187,7 @@ Visualization Manager:
           Max Intensity: 128
           Min Color: 0; 0; 0
           Min Intensity: 0
-          Name: Velodyne
+          Name: cloud_deskewed
           Position Transformer: XYZ
           Queue Size: 10
           Selectable: false
@@ -206,10 +206,13 @@ Visualization Manager:
             Min Value: -10
             Value: true
           Axis: Z
+          # Which channel(s) to use to color the points.
           Channel Name: intensity
           Class: rviz/PointCloud2
           Color: 255; 255; 255
           Color Transformer: Intensity
+          # The amount of time to keep a cloud/scan around before removing it.
+          # A value of 0 means to only display the most recent data.
           Decay Time: 0
           Enabled: false
           Invert Rainbow: false
@@ -217,7 +220,7 @@ Visualization Manager:
           Max Intensity: 0.7900000214576721
           Min Color: 0; 0; 0
           Min Intensity: 0
-          Name: Reg Cloud
+          Name: cloud_reg
           Position Transformer: XYZ
           Queue Size: 10
           Selectable: true
@@ -315,7 +318,7 @@ Visualization Manager:
           Max Intensity: 128
           Min Color: 0; 0; 0
           Min Intensity: 0
-          Name: Map (cloud)
+          Name: Map (reg decay=600)
           Position Transformer: XYZ
           Queue Size: 10
           Selectable: false
@@ -345,7 +348,7 @@ Visualization Manager:
           Max Intensity: 15.100604057312012
           Min Color: 0; 0; 0
           Min Intensity: 0.014545874670147896
-          Name: Map (local)
+          Name: Map (local surf)
           Position Transformer: XYZ
           Queue Size: 10
           Selectable: true

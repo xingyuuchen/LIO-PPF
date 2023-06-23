@@ -2,12 +2,19 @@
 <robot name="lio" xmlns:xacro="http://tixiaoshan.github.io/">
   <xacro:property name="PI" value="3.1415926535897931" />
 
-  <link name="chassis_link"></link>
+  <link name="chassis_link"> </link>
 
-  <link name="base_link"></link>
+  <link name="base_link"> </link>
   <joint name="base_link_joint" type="fixed">
     <parent link="base_link"/>
     <child link="chassis_link" />
+    <origin xyz="0 0 0" rpy="0 0 0" />
+  </joint>
+
+  <link name="imu_enu_link"> </link>
+  <joint name="imu_enu_joint" type="fixed">
+    <parent link="chassis_link" />
+    <child link="imu_enu_link" />
     <origin xyz="0 0 0" rpy="0 0 0" />
   </joint>
 

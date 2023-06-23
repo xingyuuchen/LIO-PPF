@@ -1,5 +1,12 @@
 lio_sam:
 
+  # is_extract_large_planes: false
+  is_extract_large_planes: true
+  plane_least_inliers: 150
+  point_to_plane_thresh: 0.2
+  is_incremental_fitting: false
+  is_point_relative_time_unit_us: false
+
   # Topics
   pointCloudTopic: "points_raw"               # Point cloud data
   imuTopic: "imu_raw"                         # IMU data
@@ -75,7 +82,7 @@ lio_sam:
   # Surrounding map
   surroundingkeyframeAddingDistThreshold: 1.0   # meters, regulate keyframe adding threshold
   surroundingkeyframeAddingAngleThreshold: 0.2  # radians, regulate keyframe adding threshold
-  surroundingKeyframeDensity: 2.0               # meters, downsample surrounding keyframe poses   
+  surroundingKeyframeDensity: 2.0               # meters, downsample surrounding keyframe poses
   surroundingKeyframeSearchRadius: 50.0         # meters, within n meters scan-to-map optimization (when loop closure disabled)
 
   # Loop closure
