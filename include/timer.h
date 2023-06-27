@@ -14,8 +14,8 @@
 #define D_RECORD_TIME_END(FUNC_NAME) Timer::Instance().EndRecord(FUNC_NAME)
 
 #else
-#define D_RECORD_TIME_START
-#define D_RECORD_TIME_END(FUNC_NAME)
+#define D_RECORD_TIME_START do {} while (0)
+#define D_RECORD_TIME_END(FUNC_NAME) do {} while (0)
 #endif
 
 
